@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2 class="text-primary">Lista de Marcas</h2>
+    </div>
+    <div class="col-lg-6">
+        <a class="btn btn-outline-primary" asp-action="Upsert"> <i class="bi bi-plus-square-fill"></i> Crear Nueva Marca </a>
+    </div>
+</div>
+
+<br />
+
+<div class="p-4 border rounded bg-light">
+    <table id="tblDatos" class="table table-responsive table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/marca.js"></script>
+}
