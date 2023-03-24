@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",
       "PackagePath": "staticwebassets\\js\\bodega.js"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\marca.js",
       "PackagePath": "staticwebassets\\js\\marca.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\producto.js",
+      "PackagePath": "staticwebassets\\js\\producto.js"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",

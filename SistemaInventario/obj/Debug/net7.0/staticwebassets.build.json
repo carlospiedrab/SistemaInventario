@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OkQTKi8g5MHhpJ0xxujsgF7p1qqDKPqklRFe4HKZJVo=",
+  "Hash": "7kX0I0V0UuFtYEBjKHHcv8Tlw5Xf87470cWIedK3zg0=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/producto/a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",
       "SourceId": "SistemaInventario",
       "SourceType": "Discovered",
@@ -1154,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\marca.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\producto.js",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "js/producto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\producto.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",
