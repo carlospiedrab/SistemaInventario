@@ -1,8 +1,51 @@
-﻿@{
+﻿@model IEnumerable<SistemaInventario.Modelos.Producto>
+@using SistemaInventario.Utilidades
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<header class="header">
+    <div class="container pt-sm-5">
+        <div class="heading-primary">
+            Los Mejores Productos & <br />
+            Marcas en nuestra Tienda
+        </div>
+    </div>
+</header>
+
+
+<section>
+    <div class="container my-2">
+        <div class="col-lg-6 col-md-6 col-sm-6 d-flex">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar ..." aria-label="Buscar" aria-describedby="button-addon2" />
+                <button class="btn btn-outline-primary">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach(var producto in Model)
+            {
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex">
+                    <div class="card w-100 my-2">
+                        <img src="@DS.ImagenRuta@producto.ImagenUrl" class="card-img-top" style="aspect-ratio: 1 / 1"/>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@producto.Descripcion</h5>
+                            <p class="card-text"> $ @String.Format("{0:#,##0.000}", producto.Precio) </p>
+                            <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto bg-white">
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="bi bi-tags-fill"></i> Detalle
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+    </div>
+
+</section>
