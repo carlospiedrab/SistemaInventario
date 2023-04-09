@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\usuario.js",
+      "PackagePath": "staticwebassets\\js\\usuario.js"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
