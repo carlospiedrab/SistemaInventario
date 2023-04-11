@@ -40,6 +40,29 @@ namespace SistemaInventario.Areas.Admin.Controllers
             return Json(new { data = usuarioLista });
         }
 
+
+        [HttpPost]
+        public async Task<IActionResult> BloquearDesbloquear([FromBody] string id)
+        {
+            var usuario = await _unidadTrabajo.UsuarioAplicacion.ObtenerPrimero(u=> u.Id == id);
+            if(usuario==null)
+            {
+                return Json(new { success = false, message = "Error de Usuario" });
+            }
+            if(usuario.LockoutEnd != null && usuario.LockoutEnd > DateTime.Now)
+            {
+                // Usuario Bloqueado
+                usuario.LockoutEnd = DateTime.Now;
+            }
+            else
+            {
+                usuario.LockoutEnd = DateTime.Now.AddYears(1000);
+            }
+            await _unidadTrabajo.Guardar();
+            return Json(new { success = true, message = "Operacion Exitosa" });
+
+        }
+
         #endregion
 
 

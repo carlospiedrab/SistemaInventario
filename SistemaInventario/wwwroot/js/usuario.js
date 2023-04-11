@@ -29,49 +29,54 @@ function loadDataTable() {
             { "data": "apellidos" },
             { "data": "phoneNumber" },
             { "data": "role" },
-            //{
-            //    "data": "id",
-            //    "render": function (data) {
-            //        return `
-            //            <div class="text-center">
-            //               <a href="/Admin/Categoria/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-            //                  <i class="bi bi-pencil-square"></i>  
-            //               </a>
-            //               <a onclick=Delete("/Admin/Categoria/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
-            //                    <i class="bi bi-trash3-fill"></i>
-            //               </a> 
-            //            </div>
-            //        `;
-            //    }, "width": "20%"
-            //}
+            {
+                "data": {
+                    id: "id", lockoutEnd: "lockoutEnd"
+                 },
+                "render": function (data) {
+                    let hoy = new Date().getTime();
+                    let bloqueo = new Date(data.lockoutEnd).getTime();
+                    if (bloqueo > hoy) {
+                        // Usuario esta Bloqueado
+                        return `
+                            <div class="text-center">
+                               <a onclick=BloquearDesbloquear('${data.id}') class="btn btn-danger text-white" style="cursor:pointer", width:150px >
+                                    <i class="bi bi-unlock-fill"></i> Desbloquear
+                               </a> 
+                            </div>
+                        `;
+                    }
+                    else {
+                        return `
+                            <div class="text-center">
+                               <a onclick=BloquearDesbloquear('${data.id}') class="btn btn-success text-white" style="cursor:pointer", width:150px >
+                                    <i class="bi bi-lock-fill"></i> Bloquear
+                               </a> 
+                            </div>
+                        `;
+                    }
+                   
+                }
+            }
          ]
 
     });
 }
 
-function Delete(url) {
-
-    swal({
-        title: "Esta seguro de Eliminar la Categoria?",
-        text: "Este registro no se podra recuperar",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true
-    }).then((borrar) => {
-        if (borrar) {
-            $.ajax({
-                type: "POST",
-                url: url,
-                success: function (data) {
-                    if (data.success) {
-                        toastr.success(data.message);
-                        datatable.ajax.reload();
-                    }
-                    else {
-                        toastr.error(data.message);
-                    }
-                }
-            });
+function BloquearDesbloquear(id) {
+    $.ajax({
+        type: "POST",
+        url: '/Admin/Usuario/BloquearDesbloquear',
+        data: JSON.stringify(id),
+        contentType: "application/json",
+        success: function (data) {
+            if (data.success) {
+                toastr.success(data.message);
+                datatable.ajax.reload();
+            }
+            else {
+                toastr.error(data.message);
+            }
         }
-    });
+    });       
 }
