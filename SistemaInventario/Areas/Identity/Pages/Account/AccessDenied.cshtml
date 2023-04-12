@@ -1,10 +1,13 @@
 ﻿@page
 @model AccessDeniedModel
 @{
-    ViewData["Title"] = "Access denied";
+    ViewData["Title"] = "Acceso Negado";
 }
 
 <header>
-    <h1 class="text-danger">@ViewData["Title"]</h1>
-    <p class="text-danger">You do not have access to this resource.</p>
+    <div class="container">
+        <h1 class="text-danger">@ViewData["Title"]</h1>
+        <p class="text-danger">No tienes los suficientes permisos para acceder a este Recurso.</p>
+    </div>
+   
 </header>
