@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p9JBBvBt//Bj1Ehj/NbgM4UkPEc78pxo6Zi4mWiNe6PAbjsnlsKpsyOC4Fxt4mh88g7qtKt+oJGSAG0wD0vvPQ==",
+  "dgSpecHash": "odlKco1QscSSApU8I0IXPCXP/zUiugzpGiwuWhDPQJk3gX3Zqodjla3Xa8ncF007JSdWmI4ayBmISeBRFZac2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
   "expectedPackageFiles": [
@@ -142,6 +142,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

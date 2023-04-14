@@ -589,3 +589,5 @@ C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInvent
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\obj\Debug\net7.0\SistemaInventario.pdb
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\obj\Debug\net7.0\SistemaInventario.genruntimeconfig.cache
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\obj\Debug\net7.0\ref\SistemaInventario.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\SendGrid.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\StarkbankEcdsa.dll
