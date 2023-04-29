@@ -1,0 +1,102 @@
+﻿@model SistemaInventario.Modelos.ViewModels.KardexInventarioVM
+@using SistemaInventario.Utilidades
+
+@{
+    ViewData["Title"] = "KardexProductoResultado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Kardex Por Producto";
+}
+
+<div class="container">
+
+    <div class="col-12 border-bottom p-0">
+        <h2 class="text-primary">@titulo</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-10">
+            <div class="row mb-2">
+                <div class="form-group col-md-8 mt-2">
+                    <label><strong class="m-2">Desde:</strong>@Model.FechaInicio.ToShortDateString() <strong class="m-2">Hasta: </strong> @Model.FechaFinal.ToShortDateString() </label>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="form-group col-md-8 mt-2">
+                    <label><strong class="m-2">Producto:</strong> @Model.Producto.Descripcion</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="@DS.ImagenRuta@Model.Producto.ImagenUrl" style="border-radius5px; width:100px; height:100px;" />
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="form-group col-md-3 mt-2">
+            <a asp-action="KardexProducto" class="btn btn-primary">Nueva Consulta</a>
+            <a asp-action="Index" class="btn btn-primary">Salir</a>
+        </div>
+    </div>
+
+    <table class="table table-responsive table-hover table-bordered">
+        @foreach (var bodega in Model.KardexInventarioLista.GroupBy(x =>x.BodegaProducto.Bodega.Nombre))
+        {
+            <thead class="table-secondary">
+                <tr>
+                    <th colspan="6">@bodega.Key</th>
+                    <th colspan="3" class="text-center">Saldo</th>
+                </tr>
+                <tr>
+                    <th class="text-center">Fecha</th>
+                    <th class="text-center">Tipo</th>
+                    <th class="text-center">Detalle</th>
+                    <th class="text-center">Stock Anterior</th>
+                    <th class="text-center">Entrada</th>
+                    <th class="text-center">Salida</th>
+                    <th class="text-center">Stock</th>
+                    <th class="text-center">Costo</th>
+                    <th class="text-center">Total</th>
+                </tr>
+            </thead>
+            @foreach (var datos in Model.KardexInventarioLista.Where(d => d.BodegaProducto.Bodega.Nombre == bodega.Key))
+            {
+                <tr>
+                    <td class="text-center">@datos.FechaRegistro.ToShortDateString()</td>
+                    <td class="text-center">@datos.Tipo</td>
+                    <td>@datos.Detalle</td>
+                    <td class="text-center">@datos.StockAnterior</td>
+                    @if(datos.Tipo == "Entrada")
+                    {
+                        <td class="text-center">@datos.Cantidad</td>
+                    }
+                    else
+                    {
+                        <td class="text-center">--</td>
+                    }
+                    @if (datos.Tipo == "Salida")
+                    {
+                        <td class="text-center">@datos.Cantidad</td>
+                    }
+                    else
+                    {
+                        <td class="text-center">--</td>
+                    }
+                    <td class="text-center">@datos.Stock</td>
+                    <td class="text-center">@datos.Costo</td>
+                    <td class="text-center">@datos.Total</td>
+                </tr>
+            }
+           
+            
+        }
+    </table>
+
+    @if(Model.KardexInventarioLista.Count() == 0)
+    {
+        <div class="col-12 border-bottom p-0">
+            <h3 class="text-primary text-center">No hay Datos para Mostrar</h3>
+        </div>
+
+    }
+
+</div>
+

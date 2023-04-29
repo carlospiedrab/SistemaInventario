@@ -1,0 +1,46 @@
+﻿@model SistemaInventario.Modelos.ViewModels.InventarioVM
+@{
+    ViewData["Title"] = "NuevoInventario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear Nuevo Inventario";
+}
+
+<form method="post">
+    <div style="padding-left:15%; padding-right:15%; padding-bottom: 0.5rem;">
+        <div class="row border-0">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </div>
+
+        <input asp-for="Inventario.Estado" hidden/>
+        <input asp-for="Inventario.UsuarioAplicacionId" hidden />
+        <input asp-for="Inventario.FechaInicial" hidden />
+        <input asp-for="Inventario.FechaFinal" hidden />
+
+        <div class="col-12 border-bottom p-0">
+            <h2 class="text-primary">@titulo</h2>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label>Bodega</label>
+                <select asp-for="Inventario.BodegaId" asp-items="@Model.BodegaLista" class="form-select">
+                    <option disabled selected>-- Seleccione una Bodega</option>
+                </select>
+                <span asp-validation-for="Inventario.BodegaId" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2 d-md-block">
+            <button type="submit" class="btn btn-primary">Continuar</button>
+            <a asp-action="Index" class="btn btn-success"> Salir</a>
+        </div>
+
+    </div>
+
+
+</form>
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
