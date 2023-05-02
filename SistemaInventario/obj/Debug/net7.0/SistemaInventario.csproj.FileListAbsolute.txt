@@ -592,3 +592,6 @@ C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInvent
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\SendGrid.dll
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\StarkbankEcdsa.dll
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\libman.json
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltoimage.exe
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltopdf.exe
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa.AspNetCore.dll
