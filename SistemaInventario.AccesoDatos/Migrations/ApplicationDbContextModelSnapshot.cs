@@ -306,6 +306,70 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.ToTable("Categorias");
                 });
 
+            modelBuilder.Entity("SistemaInventario.Modelos.Compania", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ActualizadoPorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BodegaVentaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Ciudad")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
+
+                    b.Property<string>("CreadoPorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Direccion")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("FechaActualizacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
+
+                    b.Property<string>("Pais")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("nvarchar(60)");
+
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActualizadoPorId");
+
+                    b.HasIndex("BodegaVentaId");
+
+                    b.HasIndex("CreadoPorId");
+
+                    b.ToTable("Companias");
+                });
+
             modelBuilder.Entity("SistemaInventario.Modelos.Inventario", b =>
                 {
                     b.Property<int>("Id")
@@ -595,6 +659,31 @@ namespace SistemaInventario.AccesoDatos.Migrations
                     b.Navigation("Bodega");
 
                     b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("SistemaInventario.Modelos.Compania", b =>
+                {
+                    b.HasOne("SistemaInventario.Modelos.UsuarioAplicacion", "ActualizadoPor")
+                        .WithMany()
+                        .HasForeignKey("ActualizadoPorId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("SistemaInventario.Modelos.Bodega", "Bodega")
+                        .WithMany()
+                        .HasForeignKey("BodegaVentaId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("SistemaInventario.Modelos.UsuarioAplicacion", "CreadoPor")
+                        .WithMany()
+                        .HasForeignKey("CreadoPorId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("ActualizadoPor");
+
+                    b.Navigation("Bodega");
+
+                    b.Navigation("CreadoPor");
                 });
 
             modelBuilder.Entity("SistemaInventario.Modelos.Inventario", b =>
