@@ -7,6 +7,7 @@ using SistemaInventario.Modelos.ViewModels;
 using SistemaInventario.Utilidades;
 using System.Globalization;
 using System.Security.Claims;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SistemaInventario.Areas.Inventario.Controllers
 {
@@ -219,9 +220,37 @@ namespace SistemaInventario.Areas.Inventario.Controllers
             KardexInventarioVM kardexInventarioVM = new KardexInventarioVM();
             kardexInventarioVM.Producto = new Producto();
             kardexInventarioVM.Producto = await _unidadTrabajo.Producto.Obtener(productoId);
-
+           
             kardexInventarioVM.FechaInicio = fechaInicio;
             kardexInventarioVM.FechaFinal = fechaFinal;
+
+            kardexInventarioVM.KardexInventarioLista = await _unidadTrabajo.KardexInventario.ObtenerTodos(
+                                                                   k => k.BodegaProducto.ProductoId == productoId &&
+                                                                       (k.FechaRegistro >= kardexInventarioVM.FechaInicio &&
+                                                                        k.FechaRegistro <= kardexInventarioVM.FechaFinal),
+                                            incluirPropiedades: "BodegaProducto,BodegaProducto.Producto,BodegaProducto.Bodega",
+                                            orderBy: o => o.OrderBy(o => o.FechaRegistro)
+                );
+
+            return new ViewAsPdf("ImprimirKardex", kardexInventarioVM)
+            {
+                FileName = "KardexProducto.pdf",
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+                PageSize = Rotativa.AspNetCore.Options.Size.A4,
+                CustomSwitches = "--page-offset 0 --footer-center [page] --footer-font-size 12"
+            };
+        }
+
+        public async Task<IActionResult> ImprimirKardexEs(string fechaInicio, string fechaFinal, int productoId)
+        {
+            KardexInventarioVM kardexInventarioVM = new KardexInventarioVM();
+            kardexInventarioVM.Producto = new Producto();
+            kardexInventarioVM.Producto = await _unidadTrabajo.Producto.Obtener(productoId);
+
+            var cultureInfo = CultureInfo.CreateSpecificCulture("es-ES");
+
+            kardexInventarioVM.FechaInicio = DateTime.ParseExact(fechaInicio, "dd.MM.yyyy HH:mm:ss", cultureInfo);
+            kardexInventarioVM.FechaFinal = DateTime.ParseExact(fechaFinal, "dd.MM.yyyy HH:mm:ss", cultureInfo); 
 
             kardexInventarioVM.KardexInventarioLista = await _unidadTrabajo.KardexInventario.ObtenerTodos(
                                                                    k => k.BodegaProducto.ProductoId == productoId &&
