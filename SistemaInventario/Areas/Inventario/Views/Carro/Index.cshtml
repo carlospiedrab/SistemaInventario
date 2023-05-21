@@ -1,0 +1,101 @@
+﻿@model SistemaInventario.Modelos.ViewModels.CarroCompraVM
+@using SistemaInventario.Utilidades
+
+
+<form method="post">
+    <br />
+    @if (Model.CarroCompraLista.Count() > 0)
+    {
+        <div>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header bg-dark text-light ml-0 row ">
+                        <div class="col-6">
+                            <i class="bi bi-cart-check-fill"></i> &nbsp;
+                            Carro de Compras
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        @foreach (var item in Model.CarroCompraLista)
+                        {
+                            <div class="row">
+                                <div class="d-none d-lg-block col-lg-1 text-center py-2">
+                                    <img src="@DS.ImagenRuta@item.Producto.ImagenUrl" class="rounded" width="100" />
+                                </div>
+                                <div class="col-12 text-sm-center col-lg-6 text-lg-left">
+                                    <h5><strong>@item.Producto.Descripcion</strong></h5>
+                                </div>
+                                <div class="col-12 text-sm-center col-lg-5 text-lg-right row">
+                                    <div class="col-4 text-md-right" style="padding-top:5px;">
+                                        <h6><strong>$@item.Producto.Precio<span class="text-muted">x</span> @item.Cantidad </strong></h6>
+                                    </div>
+                                    <div class="col-6 col-sm-4 col-lg-6">
+                                        <div class="float-right mx-1 mb-1">
+                                            <a asp-action="mas" asp-route-carroId="@item.Id" class="btn btn-outline-primary">
+                                                <i class="bi bi-plus-square-fill"></i>
+                                            </a>
+                                        </div>
+                                        <div class="float-right mx-1">
+                                            <a asp-action="menos" asp-route-carroId="@item.Id" class="btn btn-outline-danger">
+                                                <i class="bi bi-dash-square-fill"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 col-sm-4 col-lg-2 text-right">
+                                        <a asp-action="remover" asp-route-carroId="@item.Id" class="btn btn-outline-danger">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                        }
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 pr-4">
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <span class="text-primary"> Total (USD)</span>
+                                        <strong class="text-primary">$ <span id="txtTotalOrden">@Model.Orden.TotalOrden</span></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer row">
+
+                            <div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
+
+                                <a asp-area="Inventario" asp-controller="Carro" asp-action="Proceder" class="btn btn-primary form-control">Proceder</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="col-12  p-0">
+        <h3 class="text-primary text-center"><i class="bi bi-cart-check-fill"></i></h3>
+    </div>
+    <div class="col-12 p-2">
+        @if (Model.CarroCompraLista.Count() == 0)
+        {
+            <h3 class="text-primary text-center">No hay Datos para Mostrar</h3>
+        }
+
+        <div class="text-center border-0">
+            <a asp-area="Inventario" asp-controller="Home" asp-action="Index" class="btn btn-outline-primary ">Seguir Comprando</a>
+        </div>
+
+    </div>
+
+</form>
+
+
+
+
+
+
