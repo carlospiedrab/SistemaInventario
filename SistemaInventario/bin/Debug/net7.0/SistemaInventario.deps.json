@@ -46,6 +46,7 @@
           "SistemaInventario.AccesoDatos": "1.0.0",
           "SistemaInventario.Modelos": "1.0.0",
           "SistemaInventario.Utilidades": "1.0.0",
+          "Stripe.net": "41.17.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "7.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "7.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "7.0.0.0",
@@ -2499,6 +2500,21 @@
         },
         "compile": {
           "lib/netstandard2.1/StarkbankEcdsa.dll": {}
+        }
+      },
+      "Stripe.net/41.17.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "41.17.0.0",
+            "fileVersion": "41.17.0.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -6231,6 +6247,13 @@
       "sha512": "sha512-OblOaKb1enXn+dSp7tsx9yjwV+/BEKM9jFhshIkZTwCk7LuTFTp+wSon6rFzuPiIiTGtvVWQNUw2slHjGktJog==",
       "path": "starkbank-ecdsa/1.3.3",
       "hashPath": "starkbank-ecdsa.1.3.3.nupkg.sha512"
+    },
+    "Stripe.net/41.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lykjrwgMg4vU7vs4piQWMwcZb+DKEKKeOn5PCKvKGmVDw+XiA+S0iJ5oK5CsQpqX/rh9Q3YIefkXE+cG9D/jZQ==",
+      "path": "stripe.net/41.17.0",
+      "hashPath": "stripe.net.41.17.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

@@ -41,6 +41,8 @@ namespace SistemaInventario.Modelos
 
         public string TransaccionId { get; set; }
 
+        public string SessionId { get; set; }
+
         public string Telefono { get; set; }
 
         public string Direccion { get; set; }

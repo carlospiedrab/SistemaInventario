@@ -1,0 +1,152 @@
+﻿@model SistemaInventario.Modelos.ViewModels.CarroCompraVM
+<form method="post">
+    <br />
+    <div class="backgroundWhiteBorder">
+        <div class="container">
+            <div class="card">
+                <div class="card-header bg-dark text-light ml-0 row">
+                    <div class="col-6">
+                        <i class="fa fa-shopping-cart"></i> &nbsp;
+                        Detalles de la Orden
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <div class="container rounded p-2">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 pb-4">
+                                <div class="row">
+                                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="text-success">Detalles de Envío:</span>
+                                    </h4>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">
+                                        <label>Nombres</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input asp-for="Orden.NombresCliente" type="text" class="form-control" id="nombresId" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">
+                                        <label>Telefono</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input asp-for="Orden.Telefono" type="text" class="form-control" id="telefonoId" />
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">
+                                        <label>Direccion</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input asp-for="Orden.Direccion" type="text" class="form-control" id="direccionId"/>
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">
+                                        <label>Ciudad</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input asp-for="Orden.Ciudad" type="text" class="form-control" id="ciudadId"/>
+                                    </div>
+                                </div>
+                                <div class="row my-1">
+                                    <div class="col-3">
+                                        <label>Pais</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input asp-for="Orden.Pais" type="text" class="form-control" id="paisId"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 offset-lg-1">
+                                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-success">Productos:</span>
+                                </h4>
+                                <ul class="list-group mb-3">
+                                    @foreach (var item in Model.CarroCompraLista)
+                                    {
+                                        <li class="list-group-item d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="my-0">@item.Producto.Descripcion</h6>
+                                                <small class="text-muted">Cantidad: @item.Cantidad</small>
+                                            </div>
+                                            <span class="text-muted">$ @(item.Producto.Precio * item.Cantidad)</span>
+                                        </li>
+                                    }
+
+                                    <li class="list-group-item d-flex justify-content-between bg-light">
+                                        <strong class="text-success">Total (USD)</strong>
+                                        <strong class="text-success">$@(Model.Orden.TotalOrden)</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-12 col-md-8 pt-2">
+                            <p class="text-success">Fecha Estimada de Envío: @DateTime.Now.AddDays(7).ToShortDateString() - @DateTime.Now.AddDays(14).ToShortDateString()</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+
+                            <button type="submit" value="Realizar Pedido" class="btn btn-success form-control" id="procederId">Realizar Pedido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12  p-0">
+        <h3 class="text-success text-center"><i class="bi bi-cart-check-fill"></i></h3>
+    </div>
+    <div class="col-12 p-1">
+        <div class="text-center border-0">
+            <a asp-area="Inventario" asp-controller="Carro" asp-action="Index" class="btn btn-outline-success ">Regresar al Carro</a>
+        </div>
+
+    </div>
+</form>
+
+ @section Scripts {
+    <script>
+
+        $("#procederId").click(function () {
+            let nombresId = document.getElementById("nombresId").value;
+            let telefonoId = document.getElementById("telefonoId").value;
+            let direccionId = document.getElementById("direccionId").value;
+            let ciudadId = document.getElementById("ciudadId").value;
+            let paisId = document.getElementById("paisId").value;
+
+            if (nombresId == '') {
+                swal("Error", "Ingresar Nombres", "error");
+                return false;
+            }
+            if (telefonoId == '') {
+                swal("Error", "Ingresar Telefono", "error");
+                return false;
+            }
+            if (direccionId == '') {
+                swal("Error", "Ingresar Direccion", "error");
+                return false;
+            }
+            if (ciudadId == '') {
+                swal("Error", "Ingresar Ciudad", "error");
+                return false;
+            }
+            if (paisId == '') {
+                swal("Error", "Ingresar Pais", "error");
+                return false;
+            }
+        });
+
+    </script>
+ 
+ }
+  
+
+
+

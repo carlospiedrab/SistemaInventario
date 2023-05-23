@@ -595,3 +595,4 @@ C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInvent
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltoimage.exe
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa\Windows\wkhtmltopdf.exe
 C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Rotativa.AspNetCore.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario\bin\Debug\net7.0\Stripe.net.dll

@@ -228,6 +228,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xDYXJyb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Documents/BaezStone/Udemy/GuiaCompletaNet7/Proyecto/SistemaInventario/SistemaInventario/Areas/Inventario/Views/Carro/OrdenConfirmacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xDYXJyb1xPcmRlbkNvbmZpcm1hY2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/BaezStone/Udemy/GuiaCompletaNet7/Proyecto/SistemaInventario/SistemaInventario/Areas/Inventario/Views/Carro/Proceder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xDYXJyb1xQcm9jZWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/BaezStone/Udemy/GuiaCompletaNet7/Proyecto/SistemaInventario/SistemaInventario/Areas/Inventario/Views/Home/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSW52ZW50YXJpb1xWaWV3c1xIb21lXERldGFsbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
