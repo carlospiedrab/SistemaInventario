@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var estado = Context.Request.Query["estado"];
+    var aprobado = "text-primary";
+    var completado = "text-primary";
+    var todas = "text-primary";
+
+    switch (estado)
+    {
+        case "aprobado":
+            aprobado = "active text-white";
+            break;
+        case "completado":
+            completado = "active text-white";
+            break;
+        default:
+            todas = "active text-white";
+            break;
+    }  
+}
+
+<br />
+<div class="border p-3">
+    <div class="d-lg-flex justify-content-between mb-3">
+        <div class="p-2">
+            <h2 class="text-primary">Lista de Ordenes</h2>
+        </div>
+        <div class="p-2">
+            <ul class="list-group list-group-horizontal-sm">
+                <a style="text-decoration:none;" asp-controller="Orden" asp-action="Index" asp-route-estado="aprobado">
+                <li class="list-group-item @aprobado">Aprobados</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Orden" asp-action="Index" asp-route-estado="completado">
+                <li class="list-group-item @completado">Completados</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="Orden" asp-action="Index" asp-route-estado="todas">
+                <li class="list-group-item @todas">Todas</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <br /><br />
+    <table id="tblDatos" class="table table-responsive table-hover display nowrap" style="width:100%">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Cliente</th>
+                <th>Telefono</th>
+                <th>Email</th>
+                <th>Estado</th>
+                <th>Monto</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+
+</div>
+
+@section Scripts {
+    <script src="~/js/orden.js"></script>
+}
+
+
+

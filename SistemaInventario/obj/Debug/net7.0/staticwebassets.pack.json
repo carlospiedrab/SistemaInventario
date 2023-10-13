@@ -49,12 +49,20 @@
       "PackagePath": "staticwebassets\\imagenes\\producto\\94d3b98a-6faa-45e2-95b0-984fd2f98927.JPG"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\99dc4a04-34c4-4c14-8ec2-e18ddc864f01.png",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\99dc4a04-34c4-4c14-8ec2-e18ddc864f01.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\a362b8a1-f3d3-45e5-bfc4-a3a3af6ccd0d.JPG"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\a54512e8-6ea1-40cf-8319-46cfb153f07d.JPG",
       "PackagePath": "staticwebassets\\imagenes\\producto\\a54512e8-6ea1-40cf-8319-46cfb153f07d.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\producto\\bc18df67-57e3-486a-b379-e1a0f20ef42f.png",
+      "PackagePath": "staticwebassets\\imagenes\\producto\\bc18df67-57e3-486a-b379-e1a0f20ef42f.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",
@@ -71,6 +79,10 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\marca.js",
       "PackagePath": "staticwebassets\\js\\marca.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\orden.js",
+      "PackagePath": "staticwebassets\\js\\orden.js"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\BaezStone\\Udemy\\GuiaCompletaNet7\\Proyecto\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\producto.js",

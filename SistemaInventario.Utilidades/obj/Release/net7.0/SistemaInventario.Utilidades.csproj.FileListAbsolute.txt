@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\bin\Release\net7.0\SistemaInventario.Utilidades.deps.json
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\bin\Release\net7.0\SistemaInventario.Utilidades.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\bin\Release\net7.0\SistemaInventario.Utilidades.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.AssemblyInfo.cs
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\refint\SistemaInventario.Utilidades.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\SistemaInventario.Utilidades.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.Utilidades\obj\Release\net7.0\ref\SistemaInventario.Utilidades.dll

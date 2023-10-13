@@ -109,7 +109,8 @@ namespace SistemaInventario.Areas.Admin.Controllers
                 }
                 TempData[DS.Exitosa] = "Transaccion Exitosa!";
                 await _unidadTrabajo.Guardar();
-                return View("Index");
+                //return View("Index");
+                return RedirectToAction("Index");
 
             }  // If not Valid
             productoVM.CategoriaLista = _unidadTrabajo.Producto.ObtenerTodosDropdownLista("Categoria");

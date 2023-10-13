@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.AccesoDatos.deps.json
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.AccesoDatos.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.AccesoDatos.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.Modelos.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.Utilidades.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.Modelos.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\bin\Release\net7.0\SistemaInventario.Utilidades.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.AssemblyInfo.cs
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.csproj.CopyComplete
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\refint\SistemaInventario.AccesoDatos.dll
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\SistemaInventario.AccesoDatos.pdb
+C:\Users\Admin\Documents\BaezStone\Udemy\GuiaCompletaNet7\Proyecto\SistemaInventario\SistemaInventario.AccesoDatos\obj\Release\net7.0\ref\SistemaInventario.AccesoDatos.dll
